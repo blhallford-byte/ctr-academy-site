@@ -109,10 +109,59 @@ nav a {
     margin-top: 10px;
 }
 
+.tuition-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background: #f4f4f4;
+}
+
+.tuition-table th, .tuition-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.tuition-table th {
+    background: #0b3d91;
+    color: white;
+    font-weight: bold;
+}
+
+.tuition-table tr:hover {
+    background: #efefef;
+}
+
+.tuition-table .total-row {
+    background: #0b3d91;
+    color: white;
+    font-weight: bold;
+}
+
+.fee-descriptions {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.fee-card {
+    background: #f9f9f9;
+    padding: 20px;
+    border-left: 4px solid #c8102e;
+    border-radius: 5px;
+}
+
+.fee-card h4 {
+    color: #0b3d91;
+    margin-top: 0;
+}
+
 form input, form textarea {
     width: 100%;
     padding: 10px;
     margin: 8px 0;
+    box-sizing: border-box;
 }
 
 footer {
@@ -170,14 +219,89 @@ footer {
 </section>
 
 <section class="section" id="tuition">
-<h2>Tuition & Enrollment</h2>
-<p><strong>$8,500/year</strong> (Includes registration, supplies, uniforms)</p>
+<h2>2026–2027 Tuition & Fee Schedule</h2>
 
-<h3>Early Enrollment Discount</h3>
-<p><strong>$5,450/year</strong> with early registration</p>
+<table class="tuition-table">
+<thead>
+<tr>
+<th>Item</th>
+<th>Annual Cost</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tuition</td>
+<td>$8,250</td>
+</tr>
+<tr>
+<td>Enrollment & Registration Fee</td>
+<td>$450</td>
+</tr>
+<tr>
+<td>Curriculum & Technology Fee</td>
+<td>$650</td>
+</tr>
+<tr>
+<td>School Uniform Allowance</td>
+<td>$300</td>
+</tr>
+<tr>
+<td>Student Enrichment & Activities Fee</td>
+<td>$200</td>
+</tr>
+<tr>
+<td>Testing & Academic Assessment Fee</td>
+<td>$100</td>
+</tr>
+<tr>
+<td>Supplies & Classroom Materials Fee</td>
+<td>$97</td>
+</tr>
+<tr class="total-row">
+<td><strong>TOTAL</strong></td>
+<td><strong>$10,047</strong></td>
+</tr>
+</tbody>
+</table>
 
-<h3>Scholarships</h3>
-<p>Returning students may qualify for scholarship coverage of tuition differences.</p>
+<h3>Fee Descriptions</h3>
+<div class="fee-descriptions">
+<div class="fee-card">
+<h4>Tuition — $8,250</h4>
+<p>Covers core academic instruction for K–12 students in a Christ-centered educational environment utilizing accredited curriculum and qualified faculty.</p>
+</div>
+
+<div class="fee-card">
+<h4>Enrollment & Registration Fee — $450</h4>
+<p>Covers student enrollment processing, records management, scheduling, and administrative services.</p>
+</div>
+
+<div class="fee-card">
+<h4>Curriculum & Technology Fee — $650</h4>
+<p>Covers A.C.E. curriculum materials, PACEs, online educational resources, classroom technology, printing, and instructional support materials.</p>
+</div>
+
+<div class="fee-card">
+<h4>School Uniform Allowance — $300</h4>
+<p>Covers required school uniforms, chapel attire, and approved dress code items.</p>
+</div>
+
+<div class="fee-card">
+<h4>Student Enrichment & Activities Fee — $200</h4>
+<p>Covers field trips, student activities, chapel programs, academic enrichment events, and special classroom experiences.</p>
+</div>
+
+<div class="fee-card">
+<h4>Testing & Academic Assessment Fee — $100</h4>
+<p>Covers Iowa assessments, academic testing, and student evaluation services.</p>
+</div>
+
+<div class="fee-card">
+<h4>Supplies & Classroom Materials Fee — $97</h4>
+<p>Covers classroom consumables, art supplies, student planners, and general instructional materials.</p>
+</div>
+</div>
+
 </section>
 
 <section class="section" id="uniforms">
